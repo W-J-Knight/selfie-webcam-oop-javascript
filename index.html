@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Selfie Webcam</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="images/icons8-camera-32.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="images/icons8-camera-32.png"
+      type="image/x-icon"
+    />
     <script src="main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <!-- stream -->
-        <div class="video-container">
-            <video id="video" playsinline autoplay></video>
-        </div>
+      <!-- stream -->
+      <div class="video-container">
+        <video id="video" playsinline autoplay></video>
+      </div>
+      <div id="controller">
         <!-- take picture from the stream and save it -->
+        <button id="snap">Capture</button>
         <!-- count down before snap the picture -->
-        <!-- display picture  -->
-    
+        <p>Count: <span id="countDisplay">5</span></p>
+      </div>
+      <!-- display picture  -->
+      <canvas id="canvas" width="640" height="360"></canvas>
 
-        <p id="snapErrorMsgElement"></p>
+      <p id="snapErrorMsgElement"></p>
     </main>
-</body>
+  </body>
 </html>

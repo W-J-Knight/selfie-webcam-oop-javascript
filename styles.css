@@ -1,9 +1,25 @@
-body{
-    background-color: blue;
+body {
+  background-color: blue;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#controller {
+  display: flex;
+}
+
+#snap,
+#controller p {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+#snap {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  background-color: aqua;
 }
